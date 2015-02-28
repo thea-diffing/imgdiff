@@ -1,4 +1,4 @@
-# imgdiff
+# imgdiff [![Build Status](https://travis-ci.org/VisualTesting/imgdiff.svg?branch=master)](https://travis-ci.org/VisualTesting/imgdiff)
 > A pure javascript image comparison tool
 
 Install this globally and you'll have access to the `imgdiff` command anywhere on your system.

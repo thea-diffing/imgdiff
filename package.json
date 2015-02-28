@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node test/test.js"
   },
+  "bin": {
+    "imgdiff": "./imgdiffcli.js"
+  },
   "author": "John Hitchings <john@wealthfront.com> (https://www.wealthfront.com)",
   "repository": {
     "type": "git",

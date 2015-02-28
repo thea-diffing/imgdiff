@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var imgdiff = require("./imgdiff");
 var fs = require("fs");
 

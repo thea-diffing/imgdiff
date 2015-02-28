@@ -3,3 +3,7 @@ node_js:
   - "node"
   - "iojs"
   - "0.10"
+notifications:
+  email:
+    on_success: change
+    on_failure: change

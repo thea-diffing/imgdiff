@@ -7,6 +7,10 @@
     "test": "node test/test.js"
   },
   "author": "John Hitchings <john@wealthfront.com> (https://www.wealthfront.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VisualTesting/imgdiff"
+  },
   "dependencies": {
     "get-pixels": "git://github.com/scijs/get-pixels",
     "minimist": "^1.1.0",

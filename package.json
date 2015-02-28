@@ -1,0 +1,16 @@
+{
+  "name": "imgdiff",
+  "version": "1.0.0",
+  "description": "simple image diffing",
+  "main": "imgdiff.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "author": "John Hitchings <john@wealthfront.com> (https://www.wealthfront.com)",
+  "dependencies": {
+    "get-pixels": "git://github.com/scijs/get-pixels",
+    "minimist": "^1.1.0",
+    "q": "^1.1.2",
+    "save-pixels": "git://github.com/scijs/save-pixels"
+  }
+}

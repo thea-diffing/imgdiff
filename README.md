@@ -1,3 +1,18 @@
+# imgdiff
+> A pure javascript image comparison tool
+
+Install this globally and you'll have access to the `imgdiff` command anywhere on your system.
+
+```shell
+npm install -g imgdiff
+```
+
+or use as a dependency in your js app
+
+```shell
+npm install imgdiff --save
+```
+
 Example
 
 ```
@@ -11,25 +26,25 @@ imagediff.calculateImageDifference("test/left.png", "test/right.png")
     console.log("Image Width", result.resultImage.width);
     console.log("Image Height", result.resultImage.height);
     console.log("Image Channels", result.resultImage.channels);
-    // result.resultImage.data) is a ndarray suitable for use with save-pixels
+    // result.resultImage.data is a ndarray suitable for use with save-pixels
 });
 ```
 
 CLI
 ```
-$ node imgdiffcli.js
+$ imgdiff
 Usage: [original file] [new file] {--result=[output file]} {--diff-image-only}
 
-$ node imgdiffcli.js test/left.png test/right.png
+$ imgdiff test/left.png test/right.png
 {total: 10000, different: 2500, percent: 0.25}
 
-$ node imgdiffcli.js test/left.png test/right.png --result=result.png
+$ imgdiff test/left.png test/right.png --result=result.png
 {total: 10000, different: 2500, percent: 0.25}
 
-$ node imgdiffcli.js test/left.png test/right.png --result=result.png --diff-image-only
+$ imgdiff test/left.png test/right.png --result=result.png --diff-image-only
 {total: 10000, different: 2500, percent: 0.25}
 
-$ node imgdiffcli.js test/left.png test/right.png --result=_ | hexdump -C
+$ imgdiff test/left.png test/right.png --result=_ | hexdump -C
 00000000  89 50 4e 47 0d 0a 1a 0a  00 00 00 0d 49 48 44 52  |.PNG........IHDR|
 00000010  00 00 00 64 00 00 00 64  08 06 00 00 00 70 e2 95  |...d...d.....p..|
 00000020  54 00 00 00 02 49 44 41  54 78 01 ec 1a 7e d2 00  |T....IDATx...~..|
